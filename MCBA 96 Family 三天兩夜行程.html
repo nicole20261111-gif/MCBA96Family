@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MCBA 96 Family 三天兩夜行程</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<style>
+:root{--bg:#fdf0d0;--ink:#3b3330;--mute:#7a6c60;--card:#fffdf6;--acc:#9a3b2b;--pill:#f5d27a;--pillink:#3b3330;--r:18px;--bw:2px;--sh:4px 4px 0 var(--ink);--bd:var(--ink);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-skin]){--bg:#241d18;--ink:#f4e8d4;--mute:#b9a994;--card:#322922;--acc:#f0a082;--pill:#d9a441;--pillink:#241d18;--bd:#f4e8d4;color-scheme:dark}}
+:root[data-skin=tropic]{--bg:#d9f3e6;--ink:#124a3c;--mute:#4d7a6c;--card:#f7fffb;--acc:#d9456b;--pill:#ffd166}
+:root[data-skin=journal]{--bg:#f3ead8;--ink:#4a3a2a;--mute:#8a7860;--card:#fffaf0;--acc:#b0553a;--pill:#c9e4c5;--r:6px;--bw:1px;--sh:2px 2px 0 var(--ink)}
+:root[data-skin=pass]{--bg:#e3edf8;--ink:#14213d;--mute:#58667f;--card:#fff;--acc:#d62828;--pill:#fcbf49;--r:10px}
+:root[data-skin=glass]{--bg:linear-gradient(135deg,#cfe3ff,#f3d9ff);--ink:#1c2540;--mute:#55607f;--card:rgba(255,255,255,.55);--acc:#5b4bdb;--pill:rgba(255,255,255,.9);--bd:rgba(255,255,255,.9);--bw:1.5px;--sh:0 8px 24px rgba(60,60,120,.18)}
+:root[data-skin=mag]{--bg:#fff;--ink:#111;--mute:#666;--card:#fff;--acc:#e63946;--pill:#111;--pillink:#fff;--r:0px;--sh:6px 6px 0 #e63946}
+:root[data-skin=warm]{--bg:#2b2420;--ink:#f3e6d3;--mute:#c4b199;--card:#3a302a;--acc:#f0a35e;--pill:#f0a35e;--pillink:#2b2420;--bd:#f3e6d3;--sh:4px 4px 0 #0006;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-attachment:fixed;color:var(--ink);font:16px/1.7 "Zen Maru Gothic","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;padding-bottom:96px}
+h1,h2,h3,.big{font-family:"Fredoka","Zen Maru Gothic","Noto Sans TC",sans-serif}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:var(--bw) solid var(--bd);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;backdrop-filter:blur(8px)}
+.top b{white-space:nowrap}
+.top nav{display:flex;gap:4px;overflow-x:auto}
+.top a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem;padding:6px 12px;border-radius:99px;white-space:nowrap}
+.top a.on{background:var(--pill);color:var(--pillink)}
+main{max-width:640px;margin:0 auto;padding:18px 16px}
+.hero{background:var(--card);border:var(--bw) solid var(--bd);border-radius:var(--r);overflow:hidden;line-height:0}
+.hero svg{width:100%;height:auto}
+.eyebrow{margin:18px 0 0;font-size:.8rem;letter-spacing:.12em;color:var(--mute);font-weight:700}
+h1{margin:2px 0;font-size:1.9rem;line-height:1.3}
+.sub{color:var(--mute);margin:0 0 14px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;margin-bottom:18px}
+.stats b{display:block;font-size:1.7rem;color:var(--acc);font-family:Fredoka,sans-serif;line-height:1.3}
+.stats span{font-size:.78rem;color:var(--mute)}
+.now{background:var(--card);border:var(--bw) solid var(--bd);border-radius:var(--r);box-shadow:var(--sh);padding:16px 18px}
+.now small{color:var(--mute)}
+.now .big{font-size:2.6rem;color:var(--acc);font-weight:600;line-height:1.2}
+.now p{margin:6px 0 0}
+h2{font-size:1.35rem;margin:34px 0 12px;display:flex;align-items:center;gap:10px}
+.ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--pill);border:var(--bw) solid var(--bd);font-size:1.05rem}
+.box{background:var(--card);border:var(--bw) solid var(--bd);border-radius:var(--r);box-shadow:var(--sh);padding:12px 16px;margin-bottom:12px}
+.box.g{backdrop-filter:blur(10px)}
+.chk label{display:flex;gap:10px;align-items:center;padding:6px 0;cursor:pointer}
+.chk input{width:20px;height:20px;accent-color:var(--acc)}
+.chk input:checked+span{text-decoration:line-through;color:var(--mute)}
+.days{display:flex;gap:8px;margin-bottom:12px}
+.days button{flex:1;border:var(--bw) solid var(--bd);background:var(--card);color:var(--ink);border-radius:99px;padding:8px;font:700 .95rem inherit;font-family:inherit;cursor:pointer}
+.days button.on{background:var(--pill);color:var(--pillink);box-shadow:3px 3px 0 var(--bd)}
+.item{display:flex;gap:12px}
+.time{min-width:86px;color:var(--acc);font-weight:700;font-size:.9rem}
+.item h3{margin:0;font-size:1.02rem}
+.item p{margin:0;color:var(--mute);font-size:.88rem;line-height:1.5}
+a.m{color:var(--acc);font-size:.84rem;font-weight:700}
+.tip{background:var(--pill);color:var(--pillink);border:var(--bw) solid var(--bd);border-radius:var(--r);padding:12px 16px;font-size:.92rem}
+.wrap{overflow-x:auto;border:var(--bw) solid var(--bd);border-radius:var(--r);background:var(--card);box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;min-width:500px;font-size:.88rem}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px dashed var(--mute);white-space:nowrap}
+th{color:var(--mute)}td.r,th.r{text-align:right}tr:last-child td{border:0}
+.s3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.s3 div{background:var(--card);border:var(--bw) solid var(--bd);border-radius:14px;padding:10px 6px;text-align:center}
+.s3 b{display:block;color:var(--acc);font-size:1.1rem;font-family:Fredoka,sans-serif}
+.s3 span{font-size:.74rem;color:var(--mute);line-height:1.3;display:block}
+.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:6;max-width:calc(100% - 20px);display:flex;gap:4px;overflow-x:auto;background:var(--card);border:var(--bw) solid var(--bd);border-radius:99px;padding:6px;box-shadow:var(--sh);backdrop-filter:blur(10px)}
+.dock button{border:0;background:none;color:var(--ink);font:700 .78rem inherit;font-family:inherit;padding:8px 12px;border-radius:99px;white-space:nowrap;cursor:pointer}
+.dock button.on{background:var(--ink);color:var(--card)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px;text-align:center}
+.cd div{background:var(--pill);color:var(--pillink);border:var(--bw) solid var(--bd);border-radius:14px;padding:8px 0;box-shadow:3px 3px 0 var(--bd)}
+.cd b{display:block;font:600 1.7rem/1.2 Fredoka,sans-serif}
+.cd span{font-size:.75rem}
+.rg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--bg);border:var(--bw) solid var(--bd);border-radius:99px;padding:3px 12px;font-size:.85rem}
+.chip small{color:var(--mute)}
+.wx{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.wx div{background:var(--bg);border:var(--bw) solid var(--bd);border-radius:14px;padding:10px 4px}
+.wx b{display:block;color:var(--acc);font:600 1.2rem Fredoka,sans-serif}
+.wx span{font-size:.78rem;color:var(--mute)}
+footer{text-align:center;color:var(--mute);font-size:.78rem;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="top"><b>MCBA 96 三天兩夜</b>
+<nav id="nav"><a href="#home">首頁</a><a href="#prep">準備</a><a href="#plan">行程</a><a href="#place">地點</a><a href="#weather">天氣</a><a href="#rooms">住房</a><a href="#cost">費用</a></nav></div>
+<main>
+<section id="home">
+<div class="hero"><svg viewBox="0 0 600 270" role="img" aria-label="龍潭插圖" fill="none" stroke="#3b3330" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<rect width="600" height="270" fill="#fff" stroke="none"/>
+<circle cx="500" cy="62" r="30" fill="#f7d57e"/>
+<path d="M60 70q0-18 22-18 8-12 26-6 16-4 22 12 12 0 12 12z" fill="#fff"/>
+<path d="M290 50q0-14 18-14 8-10 22-4 14-2 18 10 10 0 10 8z" fill="#fff"/>
+<path d="M0 190 120 100l40 40 90-100 110 130 80-50 160 80v70H0z" fill="#aad3e6"/>
+<path d="M0 205q150-40 300 0t300-10v75H0z" fill="#b9dca0"/>
+<rect x="395" y="150" width="70" height="52" rx="6" fill="#f4a496"/><path d="M385 152h90l-45-30z" fill="#f7d57e"/>
+<path d="M425 202v-24h18v24" fill="#fff"/><path d="M430 122v-22l22 8-22 8" fill="#f4a496"/>
+<path d="M60 270q10-55 90-60v60z M170 270q10-50 90-55v55z" fill="#f4a496"/>
+<path d="M0 262h600"/></svg></div>
+<p class="eyebrow">LONGTAN ・ SPRING 2027</p>
+<h1>MCBA 96 Family 家族旅行</h1>
+<p class="sub">2027 / 04 / 30（五）– 05 / 02（日）・3 天 2 夜</p>
+<div class="stats"><div><b>3</b><span>天</span></div><div><b>13</b><span>戶家庭</span></div><div><b>38</b><span>位旅人</span></div><div><b>2</b><span>場晚會</span></div></div>
+<div class="now" id="now"></div>
+<div class="cd" id="cd"></div>
+</section>
+<section id="prep"><h2><span class="ic">🎒</span>出發前準備</h2><div class="box chk" id="chk"></div></section>
+<section id="plan"><h2><span class="ic">🗓️</span>行程</h2><div class="days" id="days"></div><div id="list"></div>
+<div class="tip">💡 <b>上午建議行程（自由安排）</b><br>・龍潭大池：漫步斜張吊橋、湖岸步道、踩船遊湖、景觀咖啡<br>・大溪老街：漫步老街、吃吃喝喝</div></section>
+<section id="place"><h2><span class="ic">📍</span>地點</h2><div id="places"></div></section>
+<section id="weather"><h2><span class="ic">🌤️</span>天氣</h2><div class="box"><div class="wx"><div><b>18–27°C</b><span>4/30–5/2 常見氣溫</span></div><div><b>🌦️ 偏多</b><span>春雨機率較高</span></div><div><b>☂️ 薄外套</b><span>早晚微涼、帶雨具</span></div></div><p style="font-size:.88rem;color:var(--mute);margin:10px 0 0">這是桃園龍潭春末的氣候概況，不是預報。實際預報約在出發前一週才會發布，屆時可看 <a class="m" href="https://www.cwa.gov.tw" target="_blank" rel="noopener">中央氣象署 →</a></p></div></section>
+<section id="rooms"><h2><span class="ic">🛏️</span>住房分配</h2><div id="roomlist"></div></section>
+<section id="cost"><h2><span class="ic">💰</span>費用</h2><div id="costs"></div></section>
+<footer>資料來源：MCBA 96 Family 行程規劃試算表</footer>
+</main>
+<div class="dock" id="dock"></div>
+<script>
+var D=[
+{t:"Day 1・4/30（五）",r:[["15:00","集合！Check in","放行李","龍潭渴望園區飯店"],["15:00–17:30","享受飯店設施","泳池／水療池／健身房／筋絡按摩／腳踏車遊憩／雲朵波波球池／任天堂遊戲室／桌球撞球手足球","龍潭渴望園區飯店"],["17:30–19:30","晚餐","飯店晚餐（桌菜）","飯店餐廳"],["19:30–21:30","96 晚會！","影片賞析、黃金闖關遊戲、吃吃喝喝","飯店會議室"]]},
+{t:"Day 2・5/1（六）",r:[["07:00–10:00","早餐","飯店自助早餐","飯店餐廳"],["10:00–12:00","小人國","小人國遊樂園一日遊、大地遊戲解任務","小人國"],["12:00–14:00","午餐","園區自行午餐","小人國"],["14:00–17:00","小人國","繼續玩、繼續解任務","小人國"],["17:00–17:30","回飯店休息","稍作整理、準備晚餐","龍潭渴望園區飯店"],["17:30–19:30","晚餐","飯店晚餐（桌菜）","飯店餐廳"],["19:30–20:30","頒獎典禮","任務計分與頒獎、吃吃喝喝","飯店會議室"]]},
+{t:"Day 3・5/2（日）",r:[["07:00–10:00","早餐","飯店自助早餐","飯店餐廳"],["10:00–11:30","享受飯店設施・Check out","泳池／水療池／健身房／筋絡按摩／腳踏車遊憩／雲朵波波球池／任天堂遊戲室／桌球撞球手足球","龍潭渴望園區飯店"],["12:00–13:30","午餐","菓園活魚餐廳","菓園活魚餐廳"],["14:00","賦歸","我們下次見～～","溫暖的家"]]}];
+var P=[["渴望園區飯店","325 桃園市龍潭區渴望里渴望路428號"],["小人國","325 桃園市龍潭區高原里高原路891號"],["菓園活魚餐廳","33558 桃園市大溪區義和里康莊路五段182號"]];
+var F=[["嚕咪一家","2 成人","雙人",12320],["Gimi 一家","2 成人","雙人",12320],["一層一家","2 成人","雙人",12320],["馬一家","2 成人＋1 小童","雙人",12320],["腮腮","1 成人（僅一晚）","雙人",5240],["益豪","1 成人（二晚）","雙人",6265],["菲一家","2 成人＋1 大童＋1 小童","四人",17565],["叮咚一家","2 成人＋1 大童＋1 小童","四人",17565],["泡泡一家","2 成人＋1 大童＋1 小童","四人",17565],["月月一家","2 成人＋2 大童","四人",19410],["Kemi 一家","2 成人＋2 大童","四人",19410],["沁／Jean／瑋庭","3 成人","四人",18480],["摳一家","2 成人＋2 小童","四人",15720]];
+var T=["泳衣、泳帽、毛巾","換洗衣物與拖鞋","小人國用：防曬、帽子、雨具","孩子的玩具或遊戲小物","96 晚會的好心情 🎉"];
+var S=[["","🎨","繪本"],["tropic","🌴","熱帶"],["journal","📒","手帳"],["pass","🎫","登機證"],["glass","🔮","玻璃"],["mag","📰","雜誌"],["warm","🌅","拾光"]];
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function map(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q)}
+var day=0,skin="",done={};
+try{skin=localStorage.getItem("mcba_skin")||"";done=JSON.parse(localStorage.getItem("mcba_chk")||"{}")}catch(e){}
+function applySkin(){if(skin)document.documentElement.setAttribute("data-skin",skin);else document.documentElement.removeAttribute("data-skin");
+document.getElementById("dock").innerHTML=S.map(function(s){return '<button class="'+(s[0]==skin?"on":"")+'" data-s="'+s[0]+'">'+s[1]+' '+s[2]+'</button>'}).join("")}
+function now(){var st=new Date(2027,3,30),t=new Date(),d0=new Date(t.getFullYear(),t.getMonth(),t.getDate()),n=Math.round((st-d0)/864e5),h;
+if(n>0)h='<small>距離出發還有</small> <span class="big">'+n+'</span> <small>天</small><p>龍潭渴望園區飯店集合、泳池球池玩到飽，小人國大地遊戲解任務，晚會頒獎之後，在菓園活魚餐廳吃完午餐賦歸。</p>';
+else if(n>-3)h='<small>旅程進行中</small> <span class="big">Day '+(1-n)+'</span> <small>/ 3</small><p>'+D[-n].t+'，玩得開心！</p>';
+else h='<span class="big">圓滿結束 🎉</span><p>我們下次見～～</p>';
+document.getElementById("now").innerHTML=h}
+function render(){
+document.getElementById("days").innerHTML=D.map(function(d,i){return '<button class="'+(i==day?"on":"")+'" data-d="'+i+'">Day '+(i+1)+'</button>'}).join("");
+var d=D[day];
+document.getElementById("list").innerHTML='<h3 style="margin:0 0 10px">'+d.t+'</h3>'+d.r.map(function(r){return '<div class="box g item"><div class="time">'+r[0]+'</div><div><h3>'+esc(r[1])+'</h3><p>'+esc(r[2])+'</p><a class="m" href="'+map(r[3])+'" target="_blank" rel="noopener">📍 '+esc(r[3])+'</a></div></div>'}).join("");
+document.getElementById("chk").innerHTML=T.map(function(t,i){return '<label><input type="checkbox" data-c="'+i+'"'+(done[i]?" checked":"")+'><span>'+t+'</span></label>'}).join("");
+document.getElementById("places").innerHTML=P.map(function(p){return '<div class="box"><h3 style="margin:0">'+p[0]+'</h3><div style="color:var(--mute);font-size:.9rem">'+p[1]+'</div><a class="m" href="'+map(p[1])+'" target="_blank" rel="noopener">在 Google 地圖開啟 →</a></div>'}).join("");
+var tot=F.reduce(function(a,f){return a+f[3]},0);
+document.getElementById("costs").innerHTML='<div class="s3"><div><b>25 / 24</b><span>第一／二晚成人</span></div><div><b>7 ・ 6</b><span>大童 ・ 小童</span></div><div><b>6–5 ・ 7</b><span>雙人房 ・ 四人房</span></div></div><div class="s3"><div><b>126,300</b><span>住宿成本</span></div><div><b>29,700</b><span>飯店餐食<br>（大童以上攤提）</span></div><div><b>2,000</b><span>會議室<br>（每成人計價）</span></div></div>'+
+'<div class="wrap"><table><tr><th>家庭</th><th>成員</th><th>房型</th><th class="r">總計 NT$</th></tr>'+F.map(function(f){return '<tr><td>'+esc(f[0])+'</td><td>'+esc(f[1])+'</td><td>'+f[2]+'</td><td class="r">'+f[3].toLocaleString()+'</td></tr>'}).join("")+'<tr><td colspan="3"><b>合計</b></td><td class="r"><b>'+tot.toLocaleString()+'</b></td></tr></table></div><p style="color:var(--mute);font-size:.85rem">費用含房費、飯店餐食、會議室、活魚餐廳與小人國門票。</p>'}
+document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+if(b.dataset.d!=null){day=+b.dataset.d;render()}
+if(b.dataset.s!=null){skin=b.dataset.s;try{localStorage.setItem("mcba_skin",skin)}catch(x){}applySkin()}});
+document.addEventListener("change",function(e){var c=e.target.dataset.c;if(c==null)return;done[c]=e.target.checked;try{localStorage.setItem("mcba_chk",JSON.stringify(done))}catch(x){}render()});
+var links=document.querySelectorAll("#nav a");
+if(window.IntersectionObserver){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")=="#"+en.target.id)})})},{rootMargin:"-30% 0px -60% 0px"});
+document.querySelectorAll("main section").forEach(function(s){io.observe(s)})}
+function rooms(){var g={"雙人":[],"四人":[]};F.forEach(function(f){g[f[2]].push(f)});
+document.getElementById("roomlist").innerHTML=[["雙人","雙人房","第一晚 6 間・第二晚 5 間"],["四人","四人房","兩晚各 7 間"]].map(function(k){return '<div class="box"><h3 style="margin:0">'+k[1]+' ・ '+g[k[0]].length+' 戶</h3><small style="color:var(--mute)">'+k[2]+'</small><div class="rg">'+g[k[0]].map(function(f){var n=f[0]=="腮腮"?"僅第 1 晚":"2 晚";return '<span class="chip">'+esc(f[0])+' <small>'+n+' ・ 房號待排</small></span>'}).join("")+'</div></div>'}).join("")}
+function tick(){var s=Date.UTC(2027,3,30,7,0,0),e=Date.UTC(2027,4,2,6,0,0),t=Date.now(),el=document.getElementById("cd");
+if(t>=e){el.innerHTML="";return}
+if(t>=s){el.innerHTML='<div style="grid-column:1/-1"><b>旅程進行中 🎉</b></div>';return}
+var d=s-t,p=function(n){return n<10?"0"+n:n};
+el.innerHTML=[[Math.floor(d/864e5),"天"],[p(Math.floor(d/36e5)%24),"時"],[p(Math.floor(d/6e4)%60),"分"],[p(Math.floor(d/1e3)%60),"秒"]].map(function(x){return '<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join("")}
+applySkin();now();render();rooms();tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
